@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>BGTaskSchedulerPermittedIdentifiers</key>
+    <array>
+        <string>com.userapp.trustsync</string>
+        <string>com.userapp.quicksync</string>
+    </array>
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>com.googleusercontent.apps.514931815167-urga6oas4volfrtdni9lhcjsjef7dmmr</string>
+            </array>
+        </dict>
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLSchemes</key>
+            <array/>
+        </dict>
+    </array>
+    <key>GoogleService-Info</key>
+    <string>GoogleService-Info</string>
+    <key>UIApplicationSceneManifest</key>
+    <dict>
+        <key>UIApplicationSupportsMultipleScenes</key>
+        <false/>
+        <key>UISceneConfigurations</key>
+        <dict>
+            <key>UIWindowSceneSessionRoleApplication</key>
+            <array>
+                <dict>
+                    <key>UISceneConfigurationName</key>
+                    <string>Default Configuration</string>
+                    <key>UISceneDelegateClassName</key>
+                    <string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+                </dict>
+            </array>
+        </dict>
+    </dict>
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>background-processing</string>
+        <string>background-fetch</string>
+        <string>location</string>
+    </array>
+    
+    <!-- ✅ MOTION PERMISSION (existing) -->
+    <key>NSMotionUsageDescription</key>
+    <string>We use motion sensors to verify authentic user behavior and enhance your account security</string>
+    
+    <!-- ✅ NEW: LOCATION PERMISSIONS -->
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>We need your location to verify your identity, detect suspicious activity, and create trusted location patterns for enhanced security</string>
+    
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>We need your location to verify your identity and provide continuous security monitoring even when the app is in the background</string>
+    
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>We need your location to provide continuous account security monitoring</string>
+    
+    <!-- ✅ OPTIONAL: If you want to access location in background -->
+    <key>UIRequiredDeviceCapabilities</key>
+    <array>
+        <string>location-services</string>
+        <string>gps</string>
+    </array>
+</dict>
+</plist>
